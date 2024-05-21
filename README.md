@@ -18,3 +18,15 @@ El sitio web de la ONG proporciona información detallada sobre nuestros servici
 
 ## Estructura del Proyecto
 
+mi-proyecto/
+├── css/
+│ └── estilos.css
+├── js/
+│ └── main.js
+├── imgs/
+│ └── imagen.png
+├── index.html
+├── about.html
+└── contact.html
+
+bash
