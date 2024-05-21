@@ -15,20 +15,23 @@
     <script src="main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
-
-        //usando jquery
+        // Usando jQuery para manejar el clic y el deslizamiento del panel y la imagen
         $(document).ready(function () {
+            // Mostramos la imagen primero y luego la ocultamos
+            $("#imagen-estadisticas").slideDown("slow", function () {
+                $("#panel").slideUp("slow");
+            });
+
             $("#flip").click(function () {
-                // Verificamos si el panel está visible o no
-                if ($("#panel").is(":visible")) {
-                    // Si el panel está visible, ocultamos la tabla y mostramos la imagen
-                    $("#panel").slideToggle("slow");
-                    $("#imagen-estadisticas").slideDown("slow");
-                } else {
-                    // Si el panel está oculto, mostramos la tabla y ocultamos la imagen
-                    $("#panel").slideToggle("slow");
-                    $("#imagen-estadisticas").slideUp("slow");
-                }
+                // Alternamos entre mostrar la tabla y ocultarla
+                $("#panel").slideToggle("slow", function () {
+                    // Mostramos la imagen si la tabla está oculta, y viceversa
+                    if ($(this).is(":visible")) {
+                        $("#imagen-estadisticas").slideUp("slow");
+                    } else {
+                        $("#imagen-estadisticas").slideDown("slow");
+                    }
+                });
             });
         });
     </script>
@@ -143,7 +146,7 @@
             <div class="container">
                 <div id="flip">
                     <h3>
-                        <p><span class="color-rojo">ESTADÍSTICAS</span><br>(Haz clic para ver más detalles)
+                        <p><span class="color-rojo">ESTADÍSTICAS</span>(Haz clic para ver más detalles)
                     </h3>
                     </p>
 

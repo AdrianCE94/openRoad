@@ -36,3 +36,4 @@ mejoras con js
                 $("#panel").slideToggle("slow");
             });
         });
+* ESTE ES BASICO- SE AÑADE DE SWAPER IMG-TABLE, SEGUIR BUSCANDO LA MEJORA
