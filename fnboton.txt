@@ -1,0 +1,32 @@
+
+
+
+//boton de subir
+window.onscroll = function () {
+    mostrarBotonSubir();
+};
+
+function mostrarBotonSubir() {
+    var btnSubir = document.getElementById("btnSubirArriba");
+    var elementoReferencia = document.getElementById("final");
+    var distanciaElemento = elementoReferencia.offsetTop; // Obtiene la distancia del elemento de referencia desde la parte superior de la página
+
+    if (window.pageYOffset > distanciaElemento) { // Comprueba si el desplazamiento vertical es mayor que la distancia del elemento de referencia
+        btnSubir.style.display = "block";
+    } else {
+        btnSubir.style.display = "none";
+    }
+}
+
+function subirArriba() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+
+mejoras con js
+
+1.validacion del formulario (mejorar un poco)
+2.boton de subir que aparezca cuando estes abajo(mirar si es mejor con cantidad de pixeles o llamando a la seccion final)
+3. evento de botones +info en servicios (seccion de cartas en la web del index.html)
+4.hacer evento onload
+5.usar jquery (usado en la parte de stats, mejorar un poco)

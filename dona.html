@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <title>Open Road - ONG - ¡Abriendo Camino para todos!</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <img src="img/logo.png" alt="logoONG" class="logoONG">
+                <p class="logo"> Open Road - COLABORA,SALVA UNA VIDA </p>
+                <a href="index.html#hero">Inicio</a>
+                <a href="index.html#somos">Historia</a>
+                <a href="index.html#servicios">Servicios</a>
+                <a href="index.html#status">Estadísticas</a>
+                <a href="index.html#final">Donde Estamos</a>
+                <a href="equipo.html">Quiénes Somos</a>
+                <a href="dona.html">Dona</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="hero2">
+            <div class="donation-container">
+                <div class="container">
+                    <h3><span class="color-rojo">ELIGE COMO QUIERES AYUDAR</span></h3>
+                    <form id="donationForm">
+                        <div class="donation-options">
+                            <div class="option">
+                                <input type="radio" id="monthly" name="donationType" value="monthly">
+                                <label for="monthly">Donar al mes</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="once" name="donationType" value="once">
+                                <label for="once">Donar una vez</label>
+                            </div>
+                        </div>
+                        <div id="donationTypeError" class="error"></div>
+
+                        <div class="amount-options">
+                            <input type="radio" id="amount50" name="donationAmount" value="50">
+                            <label for="amount50">50€</label>
+                            <input type="radio" id="amount70" name="donationAmount" value="70">
+                            <label for="amount70">70€</label>
+                            <input type="radio" id="amount120" name="donationAmount" value="120">
+                            <label for="amount120">120€</label>
+                            <input type="radio" id="amountOther" name="donationAmount" value="other">
+                            <label for="amountOther">Otra</label>
+                            <input type="text" id="customAmount" name="customAmount" placeholder="Cantidad (€)">
+                        </div>
+                        <div id="donationAmountError" class="error"></div>
+
+                        <div class="email-field">
+                            <label for="email">Déjanos tu email<b> *</b>:</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div id="emailError" class="error"></div>
+
+                        <div class="terms-field">
+                            <input type="checkbox" id="terms" name="terms">
+                            <label for="terms">Acepto los términos y condiciones<b> *</b></label>
+                        </div>
+                        <div id="termsError" class="error"></div>
+
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Reiniciar">
+                    </form>
+                    <p>Tu aportación tiene beneficios fiscales. Podrás desgravarte hasta un 80% de tu donación.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Sobre Nosotros</h3>
+                <p>Somos Open Road, una organización dedicada a proporcionar apoyo a refugiados en todo el mundo.
+                </p>
+            </div>
+            <div class="footer-column">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#servicios">Servicios</a></li>
+                    <li><a href="equipo.html">Conócenos</a></li>
+                    <li><a href="dona.html">Dona</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <p>Dirección: tucasamitelefono@openroad.com</p>
+                <p>Teléfono: 696696696</p>
+                <p>Email: openroad@openroad.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Open Road - Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+
+</html>

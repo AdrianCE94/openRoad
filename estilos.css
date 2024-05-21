@@ -1,0 +1,764 @@
+/* Estilos generales de la página */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.25em;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+caption {
+
+    margin-bottom: 40px;
+    text-align: end;
+    margin-right: 100px;
+    font-weight: bold;
+    color: red;
+    font-style: italic;
+    font-size: large;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+button {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgb(255, 38, 0);
+}
+
+button:hover {
+    background-color: rgb(250, 143, 143);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-rojo {
+    color: rgb(255, 25, 0);
+}
+
+.logoONG {
+    width: 50px;
+    height: 50px;
+}
+
+/* Estilos de la barra de navegación */
+
+header {
+    background-color: rgb(245, 245, 245);
+
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(237, 9, 9);
+    font-size: 1.6em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(4, 4, 4);
+}
+
+header a:hover {
+    color: rgb(255, 0, 0);
+}
+
+/* Estilos de la sección hero */
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("img/img1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1 {
+    color: white;
+}
+
+#hero button {
+    font-size: 1.75em;
+}
+
+/* Estilos de la sección "DONA" */
+#hero2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 120vh;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("img/img8.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero2 h1 {
+    color: white;
+}
+
+#hero2 button {
+    font-size: 1.75em;
+}
+
+/* estilo de la sección "historia" */
+#somos .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+/* Estilos de la sección "servicios" */
+#servicios {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#servicios .container {
+    padding: 150px 12px;
+}
+
+#servicios h2 {
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#servicios p {
+    display: none;
+}
+
+#servicios .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("img/img3.png");
+
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("img/img4.png");
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("img/img5.png");
+
+}
+
+#status .container {
+    text-align: center;
+    padding: 250px 12px;
+}
+
+#status li {
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+/* Estilos de la sección "final" */
+#final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 80vh;
+}
+
+#final h2 {
+    font-size: 9vw;
+}
+
+#final button {
+    font-size: 5vw;
+}
+
+
+/* Estilos del footer */
+footer {
+    background-color: rgb(230, 230, 230);
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/*responsive*/
+@media (min-width: 850px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1 {
+        font-size: 5em;
+    }
+
+    #somos .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos .texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos h2 {
+        margin-top: 0px;
+    }
+
+    #somos .img-container {
+        background-image: url("img/img2.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #servicios .programas {
+        display: flex;
+        justify-content: center;
+    }
+
+    #servicios p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    servicios h2 {
+        font-size: 4em;
+    }
+
+    #servicios h3 {
+        margin-top: 0;
+    }
+
+    #servicios .carta {
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .carta:first-child {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url("img/img3.png");
+
+    }
+
+    .carta:nth-child(2) {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url("img/img4.png");
+    }
+
+    .carta:nth-child(3) {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url("img/img5.png");
+
+    }
+
+    #status .container {
+        text-align: center;
+    }
+
+    #status ul {
+        margin-left: 100px;
+    }
+
+    #final h2 {
+        font-size: 5em;
+    }
+
+    #final button {
+        font-size: 2em;
+    }
+
+    .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+    }
+
+    @media screen and (max-width: 650px) {
+        .column {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .container::after,
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .title {
+        color: grey;
+    }
+
+    .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #b00f0f;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .button:hover {
+        background-color: #555;
+    }
+
+    @media (min-width: 1200px) {
+        #status {
+            background-position-x: calc(100vw - 800px);
+        }
+    }
+
+    .donation-container h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .donation-container label {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    .donation-container input[type="text"],
+    .donation-container input[type="email"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 16px;
+    }
+
+    .donation-container .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 40px;
+        background-color: #fff;
+        border-radius: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .donation-container .donation-options,
+    .donation-container .amount-options,
+    .donation-container .email-field,
+    .donation-container .privacy-checkboxes {
+        margin-bottom: 20px;
+    }
+
+    .donation-container input[type="radio"],
+    .donation-container input[type="checkbox"] {
+        display: none;
+    }
+
+    .donation-container input[type="radio"]+label,
+    .donation-container input[type="checkbox"]+label {
+        display: inline-block;
+        padding: 8px 12px;
+        background-color: #f4f4f4;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .donation-container input[type="radio"]:checked+label,
+    .donation-container input[type="checkbox"]:checked+label {
+        background-color: #ff0008;
+        color: #fff;
+    }
+
+    .donation-container input[type="text"],
+    .donation-container input[type="email"] {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #837d7d;
+        border-radius: 100px;
+    }
+
+    .donation-container p {
+        font-size: 14px;
+    }
+
+    /* Estilos para input de tipo submit */
+    input[type="submit"] {
+        background-color: #fb2e00;
+        border: none;
+        color: white;
+        padding: 10px 24px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    /* Estilos para input de tipo reset */
+    input[type="reset"] {
+        background-color: #ff0000;
+        /* Cambia el color de fondo según tu preferencia */
+        border: none;
+        color: white;
+        padding: 10px 24px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+
+
+
+    /* Estilos generales del footer */
+    footer {
+        background-color: #333;
+        /* Color de fondo del footer */
+        color: #fff;
+        /* Color del texto */
+        padding: 20px 0;
+        /* Espaciado interno superior e inferior */
+    }
+
+    .footer-container {
+        display: flex;
+        /* Usamos flexbox para distribuir las columnas */
+        justify-content: space-around;
+        /* Distribución equitativa de las columnas */
+
+    }
+
+    .footer-column {
+        flex: 1;
+        /* Cada columna ocupará un tercio del espacio disponible */
+        padding: 0 20px;
+        /* Espaciado interno izquierdo y derecho */
+    }
+
+    .footer-column h3 {
+        font-size: 1.2em;
+        /* Tamaño de fuente para los títulos */
+        margin-bottom: 10px;
+        /* Espacio inferior entre el título y el párrafo */
+    }
+
+    .footer-column ul {
+        list-style: none;
+        /* Quitamos los puntos de la lista */
+        padding: 0;
+        /* Quitamos el espacio interno de la lista */
+    }
+
+    .footer-column ul li {
+        margin-bottom: 5px;
+        /* Espacio inferior entre elementos de la lista */
+    }
+
+    .footer-column ul li a {
+        color: #fff;
+        /* Color de los enlaces */
+        text-decoration: none;
+        /* Quitamos el subrayado de los enlaces */
+    }
+
+    .footer-column ul li a:hover {
+        text-decoration: underline;
+        /* Subrayado al pasar el ratón sobre los enlaces */
+    }
+
+    .footer-bottom {
+        text-align: center;
+        /* Centramos el texto de derechos de autor */
+        margin-top: 20px;
+        /* Espacio superior del área de derechos de autor */
+    }
+}
+
+h3 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#galerie {
+    margin-left: auto;
+    /* Establece el margen izquierdo automático */
+    margin-right: auto;
+    /* Establece el margen derecho automático */
+    /* También puedes añadir otras propiedades de centrado vertical si es necesario */
+}
+
+#galerie {
+    display: flex;
+    width: 800px;
+    height: 430px;
+}
+
+#galerie img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+#galerie img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+/* Estilos para dispositivos de escritorio */
+@media (min-width: 768px) {
+    .donation-container .amount-options input[type="radio"]+label {
+        width: calc(25% - 10px);
+        margin-right: 10px;
+    }
+
+    .donation-container .amount-options input[type="text"] {
+        width: calc(75% - 10px);
+        margin-top: 0;
+    }
+
+    .donation-container input[type="submit"],
+    .donation-container input[type="reset"] {
+        width: 48%;
+        margin-right: 4%;
+        margin-top: 0;
+    }
+
+    .donation-container input[type="reset"] {
+        margin-right: 0;
+    }
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 767px) {
+    .donation-container .amount-options input[type="radio"]+label {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .donation-container input[type="submit"],
+    .donation-container input[type="reset"] {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .donation-container input[type="reset"] {
+        margin-top: 10px;
+    }
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+
+#btnSubirArriba {
+    position: fixed;
+    /* Fija la posición del botón en la ventana del navegador */
+    bottom: 20px;
+    /* Distancia desde la parte inferior de la ventana */
+    right: 20px;
+    /* Distancia desde el borde derecho de la ventana */
+    z-index: 999;
+    /* Asegura que el botón esté por encima de otros elementos */
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    /* Por defecto, el modal estará oculto */
+    position: fixed;
+    /* Para que el modal permanezca fijo en la ventana */
+    z-index: 1;
+    /* Establece la capa más alta */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* Agrega desplazamiento si el contenido es demasiado grande para el modal */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Fondo oscuro semitransparente */
+}
+
+/* Estilos para el contenido del modal */
+.modal-contenido {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* Centra verticalmente el modal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Ancho del contenido del modal */
+    max-width: 600px;
+    /* Ancho máximo */
+    border-radius: 10px;
+    position: relative;
+    /* Para poder posicionar el botón de cierre */
+}
+
+/* Estilos para el botón de cierre */
+.cerrar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

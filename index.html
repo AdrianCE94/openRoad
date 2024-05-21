@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <title>Open Road - ONG - ¡Abriendo Camino para todos!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+
+        //usando jquery
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideToggle("slow");
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="container">
+                <img src="img/logo.png" alt="logoONG" class="logoONG">
+                <p class="logo"> Open Road - ONG para REFUGIADOS </p>
+                <a href="#hero">Inicio</a>
+                <a href="#somos">Historia</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#status">Estadísticas</a>
+                <a href="#final">Donde Estamos</a>
+                <a href="equipo.html">Quiénes Somos</a>
+                <a href="dona.html">Dona</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h1>Salva la vida a otro ser humano.
+                Nos necesitamos. <br> Te necesitan.</h1>
+            <a href="dona.html"><button>COLABORA</button></a>
+        </section>
+
+        <section id="somos">
+            <div class="container">
+                <div class="img-container">
+                </div>
+                <div class="texto">
+
+                    <h2>Somos <span class="color-rojo">OPEN-ROAD!</span></h2>
+                    <p><b>Open Road</b> se establece con la misión de proporcionar ayuda y apoyo a los
+                        refugiados
+                        en
+                        todo el mundo. Nuestra organización surgió de un profundo compromiso con los derechos humanos y
+                        la
+                        convicción de que cada individuo merece vivir con <u>dignidad</u> y <u>seguridad</u>,
+                        independientemente
+                        de
+                        su
+                        origen o circunstancias. Desde nuestros humildes comienzos como un pequeño grupo de voluntarios
+                        dedicados, hemos crecido hasta convertirnos en una red global de solidaridad, trabajando
+                        incansablemente
+                        para aliviar el sufrimiento y brindar esperanza a aquellos que han sido desplazados por
+                        conflictos,
+                        persecuciones y desastres naturales. A lo largo de los años, hemos proporcionado refugio,
+                        alimentos,
+                        atención médica, educación y apoyo emocional a innumerables individuos y familias que se han
+                        visto
+                        obligados a abandonar sus hogares en busca de seguridad. Nuestro compromiso con la justicia
+                        social y
+                        el
+                        bienestar humano continúa impulsando cada uno de nuestros esfuerzos, y estamos dedicados a
+                        seguir
+                        trabajando en pos de un mundo más justo y compasivo para todos. Únete a nosotros en nuestro
+                        viaje
+                        mientras continuamos defendiendo los derechos de los refugiados y construyendo un futuro más
+                        brillante
+                        para las generaciones venideras.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios">
+            <div class="container">
+                <h2>Nuestros Servicios</h2>
+                <div class="programas">
+                    <div class="carta">
+                        <h3>Asesoramiento Legal</h3>
+                        <p>Ofrecemos asesoramiento legal y de inmigración para refugiados que buscan establecerse en un
+                            nuevo país. Nuestro equipo de abogados especializados está aquí para guiar a los refugiados
+                            a
+                            través de los complejos procesos legales y proporcionarles el apoyo necesario para iniciar
+                            una
+                            nueva vida de manera segura y legal.</p>
+                        <button onclick="mostrarModal('Asesoramiento Legal')">+ Info</button>
+                    </div>
+                    <div class="carta">
+                        <h3>Apoyo Social y Sicologico</h3>
+                        <p>En Open Road, entendemos los desafíos emocionales y sociales que enfrentan los refugiados
+                            durante
+                            su proceso de adaptación. Por eso, ofrecemos servicios de apoyo psicológico y social, donde
+                            nuestros profesionales capacitados brindan terapia individual y grupal, así como orientación
+                            sobre cómo acceder a recursos comunitarios y establecer redes de apoyo.</p>
+                        <button onclick="mostrarModal('Apoyo Social y Sicologico')">+ Info</button>
+                    </div>
+                    <div class="carta">
+                        <h3>Programas de Formación</h3>
+                        <p>Nuestros programas de formación y capacitación laboral están diseñados para empoderar a los
+                            refugiados y ayudarles a adquirir las habilidades necesarias para integrarse en el mercado
+                            laboral de su nuevo hogar. Ofrecemos cursos prácticos en áreas como idiomas, habilidades
+                            profesionales y emprendimiento, para que puedan construir un futuro sostenible para ellos y
+                            sus
+                            familias.</p>
+                        <button onclick="mostrarModal('Programas de Formación')">+ Info</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="miModal" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar" onclick="cerrarModal()">&times;</span>
+                <p></p>
+            </div>
+        </div>
+        <section id="status">
+            <div class="container">
+                <div id="flip">
+                    <h2><span class="color-rojo">ESTADÍSTICAS</span></h2>
+                    (Haz clic para ver más detalles)
+                </div>
+                <div id="panel">
+                    <table>
+                        <caption>Situación de los refugiados atendidos por la ONG</caption>
+                        <tr>
+                            <th rowspan="2">Año</th>
+                            <th rowspan="2">Número de refugiados atendidos</th>
+                            <th rowspan="2">Número de países de operación</th>
+                            <th colspan="2">Detalles</th>
+                        </tr>
+                        <tr>
+                            <th>Programas activos</th>
+                            <th>Financiamiento (en USD)</th>
+                        </tr>
+                        <tr>
+                            <td>2022</td>
+                            <td>85,000</td>
+                            <td>12</td>
+                            <td rowspan="3">5</td>
+                            <td rowspan="3">$2,500,000</td>
+                        </tr>
+                        <tr>
+                            <td>2023</td>
+                            <td>92,000</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>2024*</td>
+                            <td>105,000</td>
+                            <td>18</td>
+                        </tr>
+                    </table>
+
+                    <p>*Datos hasta la fecha actual (abril de 2024).</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="final">
+            <h2>¿Listo para ayudar?</h2>
+            <a href="https://www.un.org/es/" target="_blank"><button>¡Nos encontramos Cerca!</button></a>
+            <br>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d12682.388243071944!2d-5.930816479168642!3d37.37571010530484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spoligono%20parsi!5e0!3m2!1ses!2ses!4v1713621697308!5m2!1ses!2ses"
+                width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <button id="btnSubirArriba" onclick="subirArriba()" style="display: none;">Subir</button>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Sobre Nosotros</h3>
+                <p>Somos Open Road, una organización dedicada a proporcionar apoyo a refugiados en todo el mundo.
+                </p>
+            </div>
+            <div class="footer-column">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="equipo.html">Conócenos</a></li>
+                    <li><a href="dona.html">Dona</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <p>Dirección: tucasamitelefono@openroad.com</p>
+                <p>Teléfono: 696696696</p>
+                <p>Email: openroad@openroad.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Open Road - Todos los derechos reservados</p>
+        </div>
+    </footer>
+</body>
+
+</html>
