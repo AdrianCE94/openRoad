@@ -19,7 +19,16 @@
         //usando jquery
         $(document).ready(function () {
             $("#flip").click(function () {
-                $("#panel").slideToggle("slow");
+                // Verificamos si el panel está visible o no
+                if ($("#panel").is(":visible")) {
+                    // Si el panel está visible, ocultamos la tabla y mostramos la imagen
+                    $("#panel").slideToggle("slow");
+                    $("#imagen-estadisticas").slideDown("slow");
+                } else {
+                    // Si el panel está oculto, mostramos la tabla y ocultamos la imagen
+                    $("#panel").slideToggle("slow");
+                    $("#imagen-estadisticas").slideUp("slow");
+                }
             });
         });
     </script>
@@ -133,8 +142,14 @@
         <section id="status">
             <div class="container">
                 <div id="flip">
-                    <h2><span class="color-rojo">ESTADÍSTICAS</span></h2>
-                    (Haz clic para ver más detalles)
+                    <h3>
+                        <p><span class="color-rojo">ESTADÍSTICAS</span><br>(Haz clic para ver más detalles)
+                    </h3>
+                    </p>
+
+
+                    <img id="imagen-estadisticas" src="img/img6.png" alt="Imagen de estadísticas">
+
                 </div>
                 <div id="panel">
                     <table>
