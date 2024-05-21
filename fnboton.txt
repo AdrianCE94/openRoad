@@ -30,3 +30,9 @@ mejoras con js
 3. evento de botones +info en servicios (seccion de cartas en la web del index.html)
 4.hacer evento onload
 5.usar jquery (usado en la parte de stats, mejorar un poco)
+        //usando jquery
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideToggle("slow");
+            });
+        });
