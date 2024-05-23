@@ -172,3 +172,24 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+
+// usando jquery
+// Usando jQuery para manejar el clic y el deslizamiento del panel y la imagen
+$(document).ready(function () {
+  // Mostramos la imagen primero y luego la ocultamos
+  $("#imagen-estadisticas").slideDown("slow", function () {
+    $("#panel").slideUp("slow");
+  });
+
+  $("#flip").click(function () {
+    // Alternamos entre mostrar la tabla y ocultarla
+    $("#panel").slideToggle("slow", function () {
+      // Mostramos la imagen si la tabla está oculta, y viceversa
+      if ($(this).is(":visible")) {
+        $("#imagen-estadisticas").slideUp("slow");
+      } else {
+        $("#imagen-estadisticas").slideDown("slow");
+      }
+    });
+  });
+});

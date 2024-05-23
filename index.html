@@ -12,29 +12,8 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
-    <script src="main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script>
-        // Usando jQuery para manejar el clic y el deslizamiento del panel y la imagen
-        $(document).ready(function () {
-            // Mostramos la imagen primero y luego la ocultamos
-            $("#imagen-estadisticas").slideDown("slow", function () {
-                $("#panel").slideUp("slow");
-            });
-
-            $("#flip").click(function () {
-                // Alternamos entre mostrar la tabla y ocultarla
-                $("#panel").slideToggle("slow", function () {
-                    // Mostramos la imagen si la tabla está oculta, y viceversa
-                    if ($(this).is(":visible")) {
-                        $("#imagen-estadisticas").slideUp("slow");
-                    } else {
-                        $("#imagen-estadisticas").slideDown("slow");
-                    }
-                });
-            });
-        });
-    </script>
+    <script src="main.js"></script>
 </head>
 
 <body>
