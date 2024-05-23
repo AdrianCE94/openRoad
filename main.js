@@ -193,8 +193,3 @@ $(document).ready(function () {
     });
   });
 });
-
-//datepicker
-$(function () {
-  $("#datepicker").datepicker();
-});
