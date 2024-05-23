@@ -1,3 +1,4 @@
+// Validación del formulario
 document.addEventListener("DOMContentLoaded", function () {
   const formulario = document.getElementById("donationForm");
   const customAmountInput = document.getElementById("customAmount");
@@ -62,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (customAmount !== "") camposTextoNoVacios++;
 
     if (camposTextoNoVacios < 1) {
-      mostrarMensajeDeError("emailError", "Faltan campos por rellenar.");
+      mostrarMensajeDeError("emailError", "Email Obligatorio");
       formularioValido = false;
     }
 
@@ -174,6 +175,7 @@ window.onclick = function (event) {
 };
 
 // usando jquery
+
 // Usando jQuery para manejar el clic y el deslizamiento del panel y la imagen
 $(document).ready(function () {
   // Mostramos la imagen primero y luego la ocultamos
@@ -193,3 +195,6 @@ $(document).ready(function () {
     });
   });
 });
+
+//datapicker
+//Onload Aceptar politicas cookies
