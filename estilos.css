@@ -766,3 +766,26 @@ h3 {
 #imagen-estadisticas {
     display: none;
 }
+
+#cookieConsent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(249, 249, 249);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+    display: none;
+}
+
+#cookieConsent button {
+    margin: 5px;
+    padding: 10px 20px;
+}
+
+#cookieConsent a {
+    color: #f00000;
+    text-decoration: none;
+}

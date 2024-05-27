@@ -1,4 +1,4 @@
-// Validación del formulario
+// Validación del formulario 
 document.addEventListener("DOMContentLoaded", function () {
   const formulario = document.getElementById("donationForm");
   const customAmountInput = document.getElementById("customAmount");
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Asegurarse de que solo una opción de monto esté seleccionada
+  //  solo una opción de monto esté seleccionada
   customAmountInput.addEventListener("focus", function () {
     amountRadios.forEach(function (radio) {
       radio.checked = false;
@@ -154,8 +154,8 @@ function mostrarModal(nombreDeServicio) {
   } else {
     console.error(
       "El servicio '" +
-        nombreDeServicio +
-        "' no tiene información detallada disponible."
+      nombreDeServicio +
+      "' no tiene información detallada disponible."
     );
   }
 }
@@ -198,3 +198,22 @@ $(document).ready(function () {
 
 //datapicker
 //Onload Aceptar politicas cookies
+window.onload = function () {
+  // Mostrar el mensaje de cookies
+  document.getElementById('cookieConsent').style.display = 'block';
+
+  // Eventos para los botones
+  document.getElementById('acceptCookies').onclick = function () {
+    //  aceptar todas las cookies
+    document.getElementById('cookieConsent').style.display = 'none';
+    // Guardar preferencia del usuario, por ejemplo en localStorage
+    localStorage.setItem('cookiesAccepted', 'true');
+  };
+
+  document.getElementById('rejectCookies').onclick = function () {
+    //  rechazar todas las cookies
+    document.getElementById('cookieConsent').style.display = 'none';
+    // Guardar preferencia del usuario, por ejemplo en localStorage
+    localStorage.setItem('cookiesAccepted', 'false');
+  };
+};
